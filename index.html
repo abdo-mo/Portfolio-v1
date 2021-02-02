@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="default.css">
+    <link id = "theme-style" rel="stylesheet" href="">
 </head>
 <body>
     <section class = 's1'>
@@ -34,10 +35,10 @@
                     <h5 style="text-align:center; line-height:0;">Personalize Theme</h5>
                     
                     <div id = "theme-options-wrapper">
-                        <div id = "light-mode" class = "theme-dot"></div>
-                        <div id = "blue-mode" class = "theme-dot"></div>
-                        <div id = "green-mode" class = "theme-dot"></div>
-                        <div id = "purple-mode" class = "theme-dot"></div>
+                        <div data-mode = "light" id = "light-mode" class = "theme-dot"></div>
+                        <div data-mode = "blue" id = "blue-mode" class = "theme-dot"></div>
+                        <div data-mode = "green" id = "green-mode" class = "theme-dot"></div>
+                        <div data-mode = "purple" id = "purple-mode" class = "theme-dot"></div>
 
                     </div>
                     
@@ -121,6 +122,7 @@
                         <p class = "post-intro">
                             this is sentence . some more text
                         </p>
+                        <a href = "post.html">Read More</a>
                     </div> 
                 </div>
                 
@@ -131,6 +133,7 @@
                         <p class = "post-intro">
                             this is sentence . some more text
                         </p>
+                        <a href = "post.html">Read More</a>
                     </div> 
                 </div>
                 
@@ -141,6 +144,7 @@
                         <p class = "post-intro">
                             this is sentence . some more text
                         </p>
+                        <a href = "post.html">Read More</a>
                     </div> 
                 </div>
                 
@@ -151,12 +155,31 @@
     
     <section class = 's2'>
         <div class = "main-container">
-            contact
+            <h3 style = "text-align:center";>Get in touch</h3>
+            
+            <form id ="contact-form">
+                
+                <label>Name</label>
+                <input class="input-field" type = "text" name = "name">
+                
+                <label>Subject</label>
+                <input class="input-field" type = "text" name = 'subject'>
+                
+                <label>Email</label>
+                <input class="input-field" type = "text" name = "email">
+                
+                <label>Message</label>
+                <textarea class = "input-field" name = "message"></textarea>
+                
+                
+                <input id = 'submit-btn' type ="submit" value = "send">
+            </form>
+
         </div>
     </section>
 
 
 
-    
+ <script src="script.js"></script>   
 </body>
 </html>
