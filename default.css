@@ -78,7 +78,11 @@ h6{font-size:16px}
     display:grid;
     text-align:center;
     align-content:center;
+    line-height: 1px;
     min-height:10em;
+    margin-top:20px;
+    margin-bottom:20px;
+
 }
 
 .intro-wrapper
@@ -104,7 +108,7 @@ h6{font-size:16px}
     grid-area:nav-wrapper;
     border-bottom:1px solid var(--borderColor);
     display:flex;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     align-items:center;
     background-color:var(--mainColor);
 }
@@ -113,6 +117,7 @@ h6{font-size:16px}
 {
     display:flex;
     padding:10px;
+    margin-right:30px;
 }
 
 #dot1
@@ -146,6 +151,14 @@ h6{font-size:16px}
 #navigation a
 {
     color:var(--mainText);
+    font-weight:bold;
+}
+#navigation a:hover {
+    opacity: 0.7;
+}
+
+.bowser-dot:hover {
+    opacity: 0.4;
 }
 
 #navigation
@@ -307,9 +320,24 @@ h6{font-size:16px}
 #skills 
 {
     display:flex;
-    justify-content:space-evenly;
+    /* justify-content:space-between; */
+    text-align:center;
     background-color:var(--previewShadow);
 }
+.table
+{
+    margin:10px;
+}
+.table tr td
+{
+    color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
+}
+progress
+{
+    width:100px;
+}
+
 .social-links 
 {
     display:grid;
@@ -329,15 +357,6 @@ h6{font-size:16px}
     grid-gap:20px;
     justify-content:center;
     padding-bottom:50px;
-}
-
-.post
-{
-    border:1px solid var(--borderColor);
-    -webkit-box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);
-    box-shadow:-1px 1px 3px -1px rgba(0,0,0,0.75);
-    
 }
 
 .thumbnail
@@ -363,6 +382,21 @@ h6{font-size:16px}
     color:#4b5156;
     font-size:14px;
 }
+.view
+{
+    margin:10px;
+    width:100%;
+    padding-top:10px;
+    padding:10px;
+    color:#FFF;
+    background-color:var(--buttonColor);
+    border:none;
+    border-radius:30px;
+}
+.view:hover {
+    opacity: 0.4;
+}
+
 
 #contact-form
 {
@@ -407,6 +441,12 @@ h6{font-size:16px}
     color:#FFF;
     background-color:var(--buttonColor);
     border:none;
+}
+footer
+{
+    background-color:#000;
+    padding:10px;
+    text-align:center;
 }
 
 @media screen and (max-width:1200px){
