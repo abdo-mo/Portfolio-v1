@@ -489,5 +489,17 @@ footer
     {
         justify-content:center;
     }
+    #pereview
+        {
+            width:300px;
+            height:230px;
+            border:1.5px solid #17a2b8;
+            background-color: var(--previewBg);
+            padding:15px;
+            position:relative;
+            right:30px;
+            margin-bottom:30px;
+        }
+
 
 }
