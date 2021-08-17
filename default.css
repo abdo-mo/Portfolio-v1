@@ -488,10 +488,9 @@ footer
     .right-column
     {
         justify-content:center;
-        border: 2px solid #2ACA3E;
-        position:relative;
         padding-top:80;
         padding-bottom:80px;
+        overflow-y: hidden;
     }
     #pereview
         {
