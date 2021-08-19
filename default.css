@@ -164,6 +164,15 @@ h6{font-size:16px}
 .bowser-dot:hover {
     opacity: 0.4;
 }
+#nablabel{
+    font-size:26px;
+    line-height:70px;
+    display:none;
+    width:26px;
+}
+#toggle{
+    display:none;
+}
 
 #navigation
 {
@@ -174,14 +183,14 @@ h6{font-size:16px}
 #navigation li
 {
     display:inline-block;
-    margin-right:5px;
-    margin-left:5px;
+    margin-right:10px;
+    margin-left:10px;
 }
 .langu a
 {
     color:var(--mainText);
     font-weight:bold;
-    margin:5px;
+    margin:2px;
     padding:5px;    
 
 }
@@ -486,12 +495,48 @@ footer
                 "right-column";
         }
     .right-column
-    {
-        justify-content:center;
-        padding-top:80;
-        padding-bottom:80px;
-        overflow-y: hidden;
-    }
-    
+        {
+            justify-content:center;
+            padding-top:80;
+            padding-bottom:80px;
+            overflow-y: hidden;
+        }
+    #nablabel
+        {
+            display:block;
+            cursor:pointer;
+            width:26px;
+            margin :0 auto;
 
+
+        }
+    .nav
+        {
+            text-align: center;
+        }
+            
+    #navigation
+        {
+            text-align:center;
+            width:100%;
+            display:none;
+
+        }
+    #navigation li
+        {
+            display:block;
+            border-bottom:1px solid var(--borderColor);
+        }
+    #toggle:checked + #navigation
+        {
+            display:block;
+
+        }
+    .conti
+        {
+            display:flex;
+            align-items:center;
+            
+
+        }
 }
