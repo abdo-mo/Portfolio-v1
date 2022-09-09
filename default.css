@@ -382,7 +382,7 @@ progress
 .post-wrapper
 {
     display:grid;
-    grid-template-columns:repeat(auto-fit, 320px);
+    grid-template-columns:320px 320px 320px;
     grid-gap:20px;
     justify-content:center;
     padding-bottom:50px;
